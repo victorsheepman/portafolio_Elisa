@@ -1,0 +1,111 @@
+//colores 
+$green: #42E2B8;
+$black: black;
+$font:'Oxygen', sans-serif;
+ //styleName: Headline 1;
+h1{
+   
+    font-family: $font;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 154px;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+h2{
+    //styleName: Headline 2;
+    font-family: $font;
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 95px;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
+h3{//styleName: Headline 3;
+    font-family: $font;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+h4{//styleName: Headline 4;
+    font-family: $font;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+h5{//styleName: Headline 5;
+    font-family: $font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.body1{//styleName: Body 1;
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    text-align: left;
+}
+.body2{//styleName: Body 2;
+    font-family: $font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.0025em;
+    text-align: left;
+}
+@mixin button($width,$color) {
+    font-family: $font;
+    width:$width;
+    height: 49px;
+    border-radius: 90px;
+    background-color: $color;
+    border:2px solid #0F0A0A;
+    //styleName: BUTTON;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    background-repeat: no-repeat;
+    padding-left: 128px;
+    padding-right: 128px;
+    @media (max-width:768px){
+     padding-left: 0;
+     padding-right: 0;  
+    }
+}
+%title{
+    height: 64px;
+    width: 359px;
+    border-radius: 0px;
+    padding: 4px, 8px, 4px, 8px;
+    background-color: black;
+    color: $green;
+    box-shadow: -4px 4px 0px #FFFFFF;
+}

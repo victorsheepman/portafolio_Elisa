@@ -1,0 +1,160 @@
+.data{
+    width: 100%;
+    height: 611.48px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 24px;
+    align-items: center;
+    background-image: url('../assets/images/Vector-green.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 125.99px;
+    &__info{
+       
+        grid-column: 1/6;
+        height: 302px;
+    }
+    &__img{
+        height: 100%;
+        grid-column:6/13;
+        background-image: url('../assets/images/Vector-Purple.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__elisa{
+        
+        height: 389.15185546875px;
+        width: 403.94671630859375px;
+        border-radius: 176px;
+        //background-color: #8884FF;
+        overflow: hidden;
+        margin-top: 59px;
+        margin-right: 20px;
+        
+    }
+    &__social{
+        height: 44px;
+        width: 224px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        div{
+            height: 44px;
+            width: 44px;
+            border-radius: 4px;
+            padding: 8px;
+            background-color: $green;
+            border: 2px solid black;
+        }
+    }
+    @media (max-width:1200px) {
+        background-image: url('../assets/images/Vector-green.svg');
+        background-repeat: no-repeat;
+        background-position-x: 108%;
+        background-position-y: 125.99px;
+    }
+    @media (max-width:992px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../assets/images/Vector-sm.svg');
+        background-position-x: 207px;
+        background-position-y: 68px;
+        &__img{
+            height: 100%;
+            background-image: url('../assets/images/Vector-green-sm.svg');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__elisa{
+            height: 309.15185546875px;
+            width: 403.94671630859375px;
+            border-radius: 176px;
+            overflow: hidden;
+            margin-top: 9px;
+            margin-right: 20px;
+        }
+    }
+    @media (max-width:768px){
+        &__info{
+            width: 100%;
+            margin-left: 50%;
+           
+            h3{
+                font-size: 48px;
+            }
+            p{
+                font-size: 1em;
+            }
+                    
+        }
+      
+    }
+    @media (max-width:576px){
+        background-image: url('../assets/images/Vector-sm.svg');
+        background-position-x: 207px;
+        background-position-y: 68px;
+        &__info{
+            width: 100%;
+            margin-left: 50%;
+           
+            h3{
+                font-size: 48px;
+            }
+            p{
+                font-size: 12px;
+            }       
+        }
+        &__img{
+            height: 100%;
+            background-image: url('../assets/images/Vector-green-sm.svg');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__elisa{
+            height: 309.15185546875px;
+            width: 403.94671630859375px;
+            border-radius: 176px;
+            overflow: hidden;
+            margin-top: 9px;
+            margin-right: -62px;
+        }
+    }
+    @media (max-width: 450px){
+        background-image: url('../assets/images/Vector-sm.svg');
+        background-position-x: 52px;
+        background-position-y: 68px;
+        &__info{
+            width: 100%;
+            margin-left: 15%;
+           
+            h3{
+                font-size: 48px;
+            }
+            p{
+                font-size: 12px;
+            }       
+        }
+        &__elisa{
+            height: 309.15185546875px;
+            width: 403.94671630859375px;
+            border-radius: 176px;
+            overflow: hidden;
+            margin-top: 9px;
+            margin-right: -15px;
+        }
+    }
+}

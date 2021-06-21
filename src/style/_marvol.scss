@@ -1,0 +1,69 @@
+.Marvol{
+    width: 100%;
+    height: 788px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    &__data{
+       @extend .LE__data;
+        &__box{
+            @extend %title;
+            width: 159px;
+        }
+        &--buttons{
+            width: 357px;
+            height: 57px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__btn{
+            @include button(165px, $green);
+            &--white{
+                @extend .LE__data__btn;
+                background-color: unset;
+            }
+    }
+} 
+@media (max-width:1200px) {
+ 
+    }
+    @media (max-width:992px) {
+        flex-direction: column-reverse;
+        
+    }
+    @media (max-width:768px){
+        &__img__iphone{
+            width: 100%;
+    }
+    }
+    @media (max-width:576px){
+        &__img__iphone{
+            width: 362px;
+            height: 536px;
+            object-fit: contain;
+    }
+        
+    }
+    @media (max-width: 450px){
+        &__data{
+            width: 100%;
+            height: 380px;
+            &__box{
+                h4{
+                    font-size: 20px;
+                }
+            }
+            &--buttons{
+                flex-direction: column;
+                width:100%;
+                height: 122px;
+            }
+            &__btn{
+                width: 100%;
+            }
+           
+        }
+    }
+}

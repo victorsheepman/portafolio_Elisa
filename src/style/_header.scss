@@ -1,0 +1,95 @@
+.header{
+    width: 100%;
+    height: 49px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 24px;
+    justify-content: center;
+    align-items: center;
+     &__logo{
+        font-family: 'Poppins', sans-serif;;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+        grid-column: 1/2;
+    }
+    &__menu{
+        grid-column: 4/9;
+        height: 100%;
+        ul{
+            width: 100%;
+            height: 100%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            li{
+                display: inline;
+                list-style: none;
+                font-family: $font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 23px;  
+                letter-spacing: 1.25px;
+                text-align: left;
+            }
+        }
+    }
+    &__btn{
+        height: 100%;
+       
+        grid-column: 10/13;
+        .btn{
+            @include button(100%, $green);
+        }
+        &--small{
+            display: none;
+        }
+    }
+    @media (max-width:1200px) {
+        &__logo{
+            font-size: 20;
+        }
+        &__menu{
+            font-size: 12px;
+            grid-column: 4/9;
+        }
+        .btn{
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+        }
+    
+    }
+    @media (max-width:992px) {
+   
+   .btn{display: none;}
+   &__btn{
+        &--small{
+            display: block;
+            @include button(100%, $green);
+            }
+        }
+    
+    }
+    @media (max-width:768px){
+        &__menu{display: none;}
+    }
+    @media (max-width:576px){
+        &__btn{
+            grid-column: 9/13;
+        }
+
+    }
+    @media (max-width: 450px){
+        &__btn{
+            grid-column: 7/13;
+        }
+
+    }
+}
