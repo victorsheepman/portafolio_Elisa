@@ -99,6 +99,10 @@ body{
      padding-left: 0;
      padding-right: 0;  
     }
+    @media (max-width:500px){
+        padding-left: 10px;
+        padding-right: 0;  
+       } 
 }
 %title{
     height: 64px;
